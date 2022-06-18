@@ -1,5 +1,5 @@
 
-let numcartas=0
+let numcartas=0;
 
 let gifs = ["bobrossparrot","explodyparrot","fiestaparrot","metalparrot","revertitparrot","tripletsparrot"]
 
@@ -8,6 +8,8 @@ let gifs = ["bobrossparrot","explodyparrot","fiestaparrot","metalparrot","revert
  numcartas = Number(numcartas);
  if(isNaN(Number(numcartas))===true || numcartas<4 || numcartas>14 || numcartas%2 !==0) {
  alert ("Número inválido. Siga os requisitos.");
+ numcartas= 0;
+ iniciar();
  }
 
   let gifsnum = [];
@@ -29,6 +31,5 @@ let gifs = ["bobrossparrot","explodyparrot","fiestaparrot","metalparrot","revert
 }
 
  }
- iniciar();
 addcartas(numcartas);
  
