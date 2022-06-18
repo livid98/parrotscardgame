@@ -114,4 +114,27 @@ body {
   background-color: #EEF9B7;
 }
 
+
+
+.frente>img{
+  max-height: 146px;
+  max-width: 117px;
+  
+}
+
+.tras>img {
+  height: 146px;
+  max-width: 117px;
+}
+
+.face{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #A7E9AF;
+  border: 1px solid #99CEA8;
+  height: 145px;
+  width: 116px;
+  border-radius: 5px;
 }

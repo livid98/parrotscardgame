@@ -22,9 +22,9 @@ let gifs = ["bobrossparrot","explodyparrot","fiestaparrot","metalparrot","revert
 
   function addcartas(){
    for(let i=0; i<numcartas; i++){
-  let cartas = `<div class="frente">
-  <img src="img/${gifs[i]}.gif" alt="">
- </div> <div class="tras">
+  let cartas = `<div class="frente face">
+  <img src="front.png" alt="">
+ </div> <div class="tras face">
    <img src="img/${gifs[i]}.gif" alt="">
   </div>` ; 
    document.querySelector(".conteudo").innerHTML += cartas;
