@@ -10,12 +10,12 @@ body {
   font-family: 'Times New Roman', Times, serif;
   color: #75B79E;
   background-color: #EEF9B7;
-
 }
 
 
 .topo h1{font-size: 56px;
   padding-top: 40px;
+  text-align: center;
 }
 
 
@@ -42,28 +42,60 @@ body {
 
 .conteudo {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: space-around;
+  align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 70%;
   background-color: #EEF9B7;
   padding-top: 47px;
+  width: 85%;
+  height: 75%;
 }
-.carta{width: 117px;
+
+.carta {
+  width: 117px;
   height: 146px;
-  background-color:  #A7E9AF;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  position: relative;
   border-radius: 5px;
-  margin-top: 35px;
-  margin-left: 34px;
+  margin-right: 31px;
+  margin-bottom: 31px;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  backface-visibility: hidden;
+}
+.frente {
+  background-color: #A7E9AF;
+  border: solid 1 px #99CEA8;
+  transform: rotateY(180deg);
+}
+.costas {
+  border: solid 1 px #99CEA8;
+  background-color: #A7E9AF;
+}
+.costas img {
+  width: 100px;
+  height: 100px;
+}
+.frente img {
+  width: 100px;
+  height: 100px;
 }
 
-.img {width: 100px;
-     height: 100px;
+.selecionado{transform:rotateY(180deg)
+
+}
+.fixa{transform:rotateY(180deg)
+    
 }
 
 @media (max-width: 335px) {
@@ -72,20 +104,15 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 80%;
   width: 40%;
   background-color: #EEF9B7;
   padding-top: 0px;
+  margin-top: 15px;
 
 }
-
-.carta{width: 117px;
-  height: 146px;
-  background-color:  #A7E9AF;
-  border-radius: 5px;
-  margin-top: 35px;
-  margin-left: 0;
-  
+.carta {
+  margin-right: 0;
 }
 
 .topo {width: 100%;
@@ -112,29 +139,4 @@ body {
   justify-content: center;
   width: 100%;
   background-color: #EEF9B7;
-}
-
-
-
-.frente>img{
-  max-height: 146px;
-  max-width: 117px;
-  
-}
-
-.tras>img {
-  height: 146px;
-  max-width: 117px;
-}
-
-.face{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #A7E9AF;
-  border: 1px solid #99CEA8;
-  height: 145px;
-  width: 116px;
-  border-radius: 5px;
 }
